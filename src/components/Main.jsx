@@ -2,6 +2,7 @@ import useApp from "../hooks/useApp"
 import Modal from "./Modal"
 import Navbar from "./Navbar"
 import Presentation from "./Presentation"
+import Aside from "./Aside"
 
 const Main = () => {
 
@@ -12,6 +13,7 @@ const Main = () => {
             { isVisible && <Modal /> }
             <Navbar />
             <Presentation />
+            <Aside />
         </>
     )
 }
