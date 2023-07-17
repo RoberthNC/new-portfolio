@@ -15,10 +15,10 @@ const Navbar = () => {
         <div className="bg-[#0a192f] py-3 px-5 flex items-center justify-between fixed left-0 top-0 right-0">
             <img src={ Logo } alt="My personal logo" />
             <nav className="hidden sm:flex sm:justify-center sm:gap-5">
-                <a href="#" className="text-white text-base py-[8px] hover:border-b-[1px] hover:border-white">About me</a>
-                <a href="#" className="text-white text-base py-[8px] hover:border-b-[1px] hover:border-white">Skills</a>
-                <a href="#" className="text-white text-base py-[8px] hover:border-b-[1px] hover:border-white">Projects</a>
-                <a href="#" className="text-white text-base py-[8px] hover:border-b-[1px] hover:border-white">Contact me</a>
+                <a href="#" className="text-white text-base py-[8px] hover:border-b-[1px] hover:border-[#01be96]">About me</a>
+                <a href="#" className="text-white text-base py-[8px] hover:border-b-[1px] hover:border-[#01be96]">Skills</a>
+                <a href="#" className="text-white text-base py-[8px] hover:border-b-[1px] hover:border-[#01be96]">Projects</a>
+                <a href="#" className="text-white text-base py-[8px] hover:border-b-[1px] hover:border-[#01be96]">Contact me</a>
             </nav>
             <button onClick={handleModal} className="sm:hidden">
                 <img className="cursor-pointer block" src={ MenuBars } alt="Menú bars" />
