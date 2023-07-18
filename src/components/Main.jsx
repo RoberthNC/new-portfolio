@@ -3,6 +3,7 @@ import Modal from "./Modal"
 import Navbar from "./Navbar"
 import Presentation from "./Presentation"
 import Aside from "./Aside"
+import AboutMe from "./AboutMe"
 
 const Main = () => {
 
@@ -14,6 +15,7 @@ const Main = () => {
             <Navbar />
             <Presentation />
             <Aside />
+            <AboutMe />
         </>
     )
 }
