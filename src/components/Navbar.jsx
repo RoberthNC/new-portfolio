@@ -12,7 +12,7 @@ const Navbar = () => {
     }
 
     return (
-        <div className="bg-[#0a192f] py-3 px-5 flex items-center justify-between fixed left-0 top-0 right-0">
+        <div className="bg-[#0a192f] py-3 px-5 flex items-center justify-between fixed left-0 top-0 right-0 border-b-[1px] border-[#01be96] opacity-90 shadow-lg">
             <img src={ Logo } alt="My personal logo" />
             <nav className="hidden sm:flex sm:justify-center sm:gap-5">
                 <a href="#" className="text-blue-100 text-base py-[8px] hover:border-b-[1px] hover:border-[#01be96]">About me</a>
