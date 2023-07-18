@@ -5,6 +5,8 @@ import Presentation from "./Presentation"
 import Aside from "./Aside"
 import AboutMe from "./AboutMe"
 import Skills from "./Skills"
+import Contact from "./Contact"
+import Footer from "./Footer"
 
 const Main = () => {
 
@@ -18,6 +20,8 @@ const Main = () => {
             <Aside />
             <AboutMe />
             <Skills />
+            <Contact />
+            <Footer />
         </>
     )
 }
