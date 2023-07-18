@@ -4,6 +4,7 @@ import Navbar from "./Navbar"
 import Presentation from "./Presentation"
 import Aside from "./Aside"
 import AboutMe from "./AboutMe"
+import Skills from "./Skills"
 
 const Main = () => {
 
@@ -16,6 +17,7 @@ const Main = () => {
             <Presentation />
             <Aside />
             <AboutMe />
+            <Skills />
         </>
     )
 }
