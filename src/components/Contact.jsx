@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <div className="bg-[#0a192f] h-screen flex flex-col justify-center gap-y-3 px-5 sm:px-[20%]">
+    <div id="contact" className="bg-[#0a192f] h-screen flex flex-col justify-center gap-y-3 px-5 sm:px-[20%]">
         <p className="text-blue-100 w-[110px] text-3xl font-bold border-b-[3px] border-[#01be96] py-[5px] sm:text-center sm:mx-auto inline">Contact</p>
         <p className="text-blue-100 text-base text-justify justify-normal sm:text-center">Do you have any questions or want to work with me?</p>
         <div className="w-[98.5%] sm:w-[550px] mx-auto">

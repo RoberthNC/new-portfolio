@@ -2,7 +2,7 @@ import ProfilePhoto from "../assets/img/Photo.png"
 
 const AboutMe = () => {
   return (
-    <div className="bg-[#0a192f] h-screen flex flex-row items-center justify-center gap-x-10 gap-y-5 px-5 sm:px-[10%]">
+    <div id="about" className="bg-[#0a192f] h-screen flex flex-row items-center justify-center gap-x-10 gap-y-5 px-5 sm:px-[10%]">
       <div className="flex flex-col gap-y-5 sm:items-end">
         <p className="text-blue-100 w-[141.5px] text-3xl font-bold border-b-[3px] border-[#01be96] py-[5px] sm:text-right">About Me</p>
         <p className="text-blue-100 text-base text-justify sm:text-right">

@@ -4,7 +4,7 @@ import { skills } from "../data/skills.js"
 
 const Skills = () => {
   return (
-    <div className="bg-[#0a192f] h-screen flex flex-col justify-center gap-y-3 px-5 sm:px-[20%]">
+    <div id="skills" className="bg-[#0a192f] h-screen flex flex-col justify-center gap-y-3 px-5 sm:px-[20%]">
         <div>
           <p className="text-blue-100 w-[71.5px] text-3xl font-bold border-b-[3px] border-[#01be96] py-[5px] sm:text-left">Skills</p>
         </div>

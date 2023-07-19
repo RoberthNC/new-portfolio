@@ -3,7 +3,7 @@ import Pdf from "../assets/pdf/Roberto Núñez - CV.pdf"
 
 const Presentation = () => {
   return (
-    <div className="bg-[#0a192f] h-screen flex flex-col justify-center gap-y-3 px-5 sm:px-[20%]">
+    <div id="presentation" className="bg-[#0a192f] h-screen flex flex-col justify-center gap-y-3 px-5 sm:px-[20%]">
         <p className="text-[#01be96] text-base">Hi! my name is</p>
         <p className="text-blue-100 text-3xl md:text-5xl font-bold">Roberto Núñez</p>
         <p className="text-gray-500 text-3xl md:text-5xl font-bold">I'm a Full-Stack Developer</p>
