@@ -1,3 +1,4 @@
+import { useEffect } from "react"
 import { Link } from "react-scroll"
 
 import Logo from "../assets/icons/logo.svg"
@@ -11,6 +12,15 @@ const Navbar = () => {
     const handleModal = () => {
         setIsVisible(!isVisible)
     }
+
+    useEffect(()=>{
+        const resize = () => {
+            if(window.innerWidth>640){
+                setIsVisible(false)
+            }
+        }
+        window.addEventListener("resize", resize)
+    }, [window])
 
     return (
         <div className="bg-[#0a192f] py-3 px-5 flex items-center justify-between fixed left-0 top-0 right-0 border-b-[1px] border-[#01be96] opacity-90 shadow-lg">
