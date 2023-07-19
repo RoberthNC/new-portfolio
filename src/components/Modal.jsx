@@ -4,10 +4,10 @@ import useApp from "../hooks/useApp"
 
 const Modal = () => {
 
-    const { setIsVisible } = useApp()
+    const { isVisible, setIsVisible } = useApp()
 
     const hideModal = () => {
-        setIsVisible( v => setIsVisible(!v) )
+        setIsVisible(!isVisible)
     }
 
     return (

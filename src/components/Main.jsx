@@ -12,6 +12,8 @@ const Main = () => {
 
     const { isVisible } = useApp()
 
+    console.log(isVisible)
+
     return (
         <>
             { isVisible && <Modal /> }

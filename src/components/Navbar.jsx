@@ -6,11 +6,10 @@ import useApp from "../hooks/useApp"
 
 const Navbar = () => {
 
-    const { setIsVisible } = useApp()
+    const { isVisible, setIsVisible } = useApp()
 
-    const handleModal = (e) => {
-        e.preventDefault();
-        setIsVisible( v => setIsVisible(!v) )
+    const handleModal = () => {
+        setIsVisible(!isVisible)
     }
 
     return (
