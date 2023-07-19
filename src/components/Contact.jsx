@@ -9,7 +9,7 @@ const Contact = () => {
                 <input type="text" placeholder="Email" className="bg-blue-100 text-gray-500 px-1 py-2 focus:outline-none" />
                 <textarea placeholder="Message" className="bg-blue-100 text-gray-500 resize-none px-1 py-2 h-32 focus:outline-none"></textarea>
                 <div className="flex justify-end">
-                    <input type="submit" value="Submit" className="inline-block border-[2px] px-5 py-2 mt-3 hover:border-[#01be96] hover:bg-[#01be96] transition-colors duration-300 text-blue-100" />
+                    <input type="submit" value="Submit" className="inline-block border-[2px] px-5 py-2 mt-3 hover:border-[#01be96] hover:bg-[#01be96] transition-colors duration-300 text-blue-100 cursor-pointer" />
                 </div>
             </form>
         </div>
