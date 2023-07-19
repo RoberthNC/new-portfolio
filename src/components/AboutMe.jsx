@@ -4,7 +4,9 @@ const AboutMe = () => {
   return (
     <div id="about" className="bg-[#0a192f] h-screen flex flex-row items-center justify-center gap-x-10 gap-y-5 px-5 sm:px-[10%]">
       <div className="flex flex-col gap-y-5 sm:items-end">
-        <p className="text-blue-100 w-[141.5px] text-3xl font-bold border-b-[3px] border-[#01be96] py-[5px] sm:text-right">About Me</p>
+        <div className="flex justify-start">
+          <p className="text-blue-100 text-3xl font-bold py-[5px] sm:text-right border-b-[3px] border-[#01be96] inline">About Me</p>
+        </div>
         <p className="text-blue-100 text-base text-justify sm:text-right">
             I'm a person who is passionate about programming, especially I really like web development, the idea of creating many things using current technologies seems interesting to me.
             I've worked as a developer in two companies in my city, in one I worked as a Full-Stack collaboratively with a development team, on the other hand I have worked as a Freelance Front-End for a construction company.
