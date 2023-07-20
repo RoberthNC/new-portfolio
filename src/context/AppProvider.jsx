@@ -6,12 +6,15 @@ const AppContext = createContext()
 const AppProvider = ({ children }) => {
 
   const [ isVisible, setIsVisible ] = useState(false)
+  const [ isHover, setIsHover ] = useState(false)
 
   return (
     <AppContext.Provider
         value={{
             isVisible,
-            setIsVisible
+            setIsVisible,
+            isHover,
+            setIsHover
         }}
     >
         { children }
