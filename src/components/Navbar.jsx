@@ -28,7 +28,7 @@ const Navbar = () => {
             <nav className="hidden sm:flex sm:justify-center sm:gap-5">
                 <Link to="about" smooth={ true } spy={ true } duration={ 500 } className="text-blue-100 text-base py-[8px] hover:border-b-[1px] hover:border-[#01be96] cursor-pointer">About me</Link>
                 <Link to="skills" smooth={ true } spy={ true } duration={ 500 } className="text-blue-100 text-base py-[8px] hover:border-b-[1px] hover:border-[#01be96] cursor-pointer">Skills</Link>
-                <Link to="" smooth={ true } spy={ true } duration={ 500 } className="text-blue-100 text-base py-[8px] hover:border-b-[1px] hover:border-[#01be96] cursor-pointer">Projects</Link>
+                <Link to="projects" smooth={ true } spy={ true } duration={ 500 } className="text-blue-100 text-base py-[8px] hover:border-b-[1px] hover:border-[#01be96] cursor-pointer">Projects</Link>
                 <Link to="contact" smooth={ true } spy={ true } duration={ 500 } className="text-blue-100 text-base py-[8px] hover:border-b-[1px] hover:border-[#01be96] cursor-pointer">Contact me</Link>
             </nav>
             <button onClick={handleModal} className="sm:hidden">
