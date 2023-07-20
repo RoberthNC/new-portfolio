@@ -18,9 +18,6 @@ const Contact = () => {
   const SERVICE_ID = import.meta.env.VITE_SERVICE_ID
   const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID
   const PUBLIC_KEY = import.meta.env.VITE_PUBLIC_KEY
-  console.log(SERVICE_ID)
-  console.log(TEMPLATE_ID)
-  console.log(PUBLIC_KEY)
 
   const handleSubmit = (e) => {
     e.preventDefault()
