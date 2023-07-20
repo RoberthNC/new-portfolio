@@ -1,4 +1,5 @@
-import { useState } from "react"
+import { useState, useRef } from "react"
+import emailjs from "@emailjs/browser"
 
 import CheckToast from "./CheckToast"
 import ErrorToast from "./ErrorToast"
@@ -8,9 +9,15 @@ import { errorNotify } from "./ErrorToast"
 
 const Contact = () => {
 
+  const form = useRef()
+
   const [ name, setName ] = useState("")
   const [ email, setEmail ] = useState("")
   const [ message, setMessage ] = useState("")
+
+  const SERVICE_ID = import.meta.env.VITE_SERVICE_ID
+  const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID
+  const PUBLIC_KEY = import.meta.env.VITE_PUBLIC_KEY
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -19,6 +26,13 @@ const Contact = () => {
       errorNotify()
       return
     }
+
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
+      .then((result) => {
+          console.log(result.text)
+      }, (error) => {
+          console.log(error.text)
+      })
 
     checkNotify()
     setTimeout(()=>{
@@ -36,10 +50,10 @@ const Contact = () => {
         </div>
         <p className="text-blue-100 text-base text-justify justify-normal sm:text-center">Do you have any question or want to work with me?</p>
         <div className="w-[98.5%] sm:w-[550px] mx-auto">
-            <form className="flex flex-col gap-y-1 mt-3">
-              <input type="text" placeholder="Name" className="bg-blue-100 text-gray-500 px-1 py-2 focus:outline-none" value={ name } onChange={ (e)=> setName(e.target.value) } />
-              <input type="email" placeholder="Email" className="bg-blue-100 text-gray-500 px-1 py-2 focus:outline-none" value={ email } onChange={ (e)=> setEmail(e.target.value) } />
-              <textarea placeholder="Message" className="bg-blue-100 text-gray-500 resize-none px-1 py-2 h-32 focus:outline-none" value={ message } onChange={ (e)=> setMessage(e.target.value) }></textarea>
+            <form ref={form} className="flex flex-col gap-y-1 mt-3">
+              <input type="text" placeholder="Name" className="bg-blue-100 text-gray-500 px-1 py-2 focus:outline-none" name="from_name" value={ name } onChange={ (e)=> setName(e.target.value) } />
+              <input type="email" placeholder="Email" className="bg-blue-100 text-gray-500 px-1 py-2 focus:outline-none" name="user_email" value={ email } onChange={ (e)=> setEmail(e.target.value) } />
+              <textarea placeholder="Message" className="bg-blue-100 text-gray-500 resize-none px-1 py-2 h-32 focus:outline-none" name="message" value={ message } onChange={ (e)=> setMessage(e.target.value) }></textarea>
               <div className="flex justify-end">
                   <input onClick={ handleSubmit } type="submit" value="Submit" className="inline-block border-[2px] px-5 py-2 mt-3 hover:border-[#01be96] hover:bg-[#01be96] transition-colors duration-300 text-blue-100 cursor-pointer" />
               </div>
