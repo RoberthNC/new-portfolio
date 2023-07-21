@@ -5,7 +5,7 @@ import Presentation from "./Presentation"
 import Aside from "./Aside"
 import AboutMe from "./AboutMe"
 import Skills from "./Skills"
-import Proyectos from "./Proyectos"
+import Projects from "./Projects"
 import Contact from "./Contact"
 import Footer from "./Footer"
 
@@ -21,7 +21,7 @@ const Main = () => {
             <Aside />
             <AboutMe />
             <Skills />
-            <Proyectos />
+            <Projects />
             <Contact />
             <Footer />
         </>
