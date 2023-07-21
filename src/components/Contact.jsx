@@ -37,11 +37,9 @@ const Contact = () => {
       })
 
     checkNotify()
-    setTimeout(()=>{
-      setName("")
-      setEmail("")
-      setMessage("")
-    },1500)
+    setName("")
+    setEmail("")
+    setMessage("")
   }
 
   useEffect(()=>{
