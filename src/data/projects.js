@@ -5,14 +5,16 @@ import ReduxCRUD from "../assets/img/ReduxCRUD.png"
 import TodoListConsole from "../assets/img/TodoListConsoleApp.png"
 import WeatherConsole from "../assets/img/WeatherConsoleApp.png"
 
+const lang = navigator.language.split('-')[0]
+
 const projects = [
     {
-        name:"Cryptocurrency React",
+        name:lang === 'es' ? "Criptomonedas React" : "Cryptocurrency React",
         img:Cryptocurrency,
         repository:"https://github.com/RoberthNC/Cotizador-Cryptomonedas-React"
     },
     {
-        name:"Customer Manager React",
+        name:lang === 'es' ? "Administrador de Clientes React" : "Customer Manager React",
         img:CustomerManager,
         repository:"https://github.com/RoberthNC/Administrador-de-Clientes"
     },
@@ -27,12 +29,12 @@ const projects = [
         repository:"https://github.com/RoberthNC/Redux-CRUD"
     },
     {
-        name:"Todo List Console App",
+        name:lang === 'es' ? "Consola de Tareas NodeJs" : "Todo List Console NodeJs",
         img:TodoListConsole,
         repository:"https://github.com/RoberthNC/Todo-List"
     },
     {
-        name:"Weather Console App",
+        name:lang === 'es' ? "Consola de Clima NodeJs" : "Weather Console NodeJs",
         img:WeatherConsole,
         repository:"https://github.com/RoberthNC/Consola-de-Clima"
     }
